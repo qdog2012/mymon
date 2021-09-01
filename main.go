@@ -111,10 +111,10 @@ func fetchData(conf *common.Config, db mysql.Conn) (err error) {
 	var data []*MetaData
 
 	// Get slave status and set IsSlave global var
-	slaveState, err := ShowSlaveStatus(conf, db)
-	if err != nil {
-		return
-	}
+	// slaveState, err := ShowSlaveStatus(conf, db)
+	// if err != nil {
+	// 	return
+	// }
 
 	Tag = GetTag(conf)
 
@@ -130,19 +130,19 @@ func fetchData(conf *common.Config, db mysql.Conn) (err error) {
 	}
 	data = append(data, globalVars...)
 
-	innodbState, err := ShowInnodbStatus(conf, db)
-	if err != nil {
-		return
-	}
-	data = append(data, innodbState...)
+	// innodbState, err := ShowInnodbStatus(conf, db)
+	// if err != nil {
+	// 	return
+	// }
+	// data = append(data, innodbState...)
 
-	data = append(data, slaveState...)
+	//data = append(data, slaveState...)
 
-	binaryLogStatus, err := ShowBinaryLogs(conf, db)
-	if err != nil {
-		return
-	}
-	data = append(data, binaryLogStatus...)
+	// binaryLogStatus, err := ShowBinaryLogs(conf, db)
+	// if err != nil {
+	// 	return
+	// }
+	// data = append(data, binaryLogStatus...)
 
 	// Send Data to falcon-agent
 	msg, err := SendData(conf, data)
