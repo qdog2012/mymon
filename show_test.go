@@ -19,7 +19,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/open-falcon/mymon/common"
+	"github.com/qdog2012/mymon/common"
 
 	"github.com/sebdah/goldie"
 	"github.com/stretchr/testify/assert"

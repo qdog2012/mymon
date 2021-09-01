@@ -20,7 +20,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/open-falcon/mymon/common"
+	"github.com/qdog2012/mymon/common"
 
 	"github.com/astaxie/beego/logs"
 	"github.com/ziutek/mymysql/mysql"

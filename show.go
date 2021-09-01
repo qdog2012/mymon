@@ -21,7 +21,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/open-falcon/mymon/common"
+	"github.com/qdog2012/mymon/common"
 
 	"github.com/ziutek/mymysql/mysql"
 	_ "github.com/ziutek/mymysql/native"

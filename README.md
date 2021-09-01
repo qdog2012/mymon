@@ -8,8 +8,8 @@ mymon(MySQL-Monitor) 是Open-Falcon用来监控MySQL数据库运行状态的一�
 
 ```bash
 # Build
-go get -u github.com/open-falcon/mymon
-cd $GOPATH/src/github.com/open-falcon/mymon
+go get -u github.com/qdog2012/mymon
+cd $GOPATH/src/github.com/qdog2012/mymon
 make
 
 # Add to crontab

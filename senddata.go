@@ -25,7 +25,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/open-falcon/mymon/common"
+	"github.com/qdog2012/mymon/common"
 )
 
 // SendData Post the json of all result to falcon-agent
